@@ -12,7 +12,6 @@
 /.next/
 /out/
 next-env.d.ts
-/public/images
 
 # production
 /build
