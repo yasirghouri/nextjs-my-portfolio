@@ -31,8 +31,8 @@ const Sidebar = () => {
         href=""
         download=""
       >
-        <BsDownload className="w-5 h-5 mr-2" />
-        Download Resume
+        <BsDownload className="w-4 h-4 mr-1" />
+        <span>Download Resume</span>
       </a>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full">
         <a href="https://www.facebook.com/cristiano.yasir.7/">
@@ -68,7 +68,7 @@ const Sidebar = () => {
         className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 focus:outline-none hover:scale-105"
         onClick={changeTheme}
       >
-        Toggle Theme
+        Toggle UI
       </button>
     </div>
   );

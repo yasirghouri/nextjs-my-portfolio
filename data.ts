@@ -1,6 +1,6 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { IService, ISkill } from "./type";
+import { IProject, IService, ISkill } from "./type";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { BsCircleFill } from "react-icons/bs";
@@ -98,3 +98,5 @@ export const tools: ISkill[] = [
     level: "45",
   },
 ];
+
+export const projects: IProject[] = [];
