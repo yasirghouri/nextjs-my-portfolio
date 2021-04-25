@@ -3,5 +3,5 @@ import { IconType } from "react-icons/lib";
 export interface IService {
   title: string;
   about: string;
-  icon: IconType;
+  Icon: IconType;
 }

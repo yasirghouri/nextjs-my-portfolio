@@ -6,36 +6,36 @@ import { MdDeveloperMode } from "react-icons/md";
 
 export const services: IService[] = [
   {
-    icon: RiComputerLine,
+    Icon: RiComputerLine,
     title: "Frontend Development",
     about:
       "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
   },
   {
-    icon: FaServer,
+    Icon: FaServer,
     title: "Backend  Development",
     about:
       "handle database, server, api using <b>Express </b> & other popular frameworks",
   },
   {
-    icon: AiOutlineApi,
+    Icon: AiOutlineApi,
     title: "API Development",
     about:
       "I can develop robust  REST API using <b>Nest JS</b>  & <b>Node API</b> ",
   },
   {
-    icon: MdDeveloperMode,
+    Icon: MdDeveloperMode,
     title: "Competitive Coder",
     about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
   },
   {
-    icon: AiOutlineAntDesign,
+    Icon: AiOutlineAntDesign,
     title: "UI/UX designer",
     about:
       "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
   },
   {
-    icon: RiComputerLine,
+    Icon: RiComputerLine,
     title: "Whatever",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",

@@ -1,8 +1,29 @@
 import { GetServerSidePropsContext } from "next";
+import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 const index = () => {
-  return <div>Bye bye world</div>;
+  return (
+    <div className="flex flex-col flex-grow px-6 pt-1">
+      <h5 className="my-3 font-medium">
+        I am a BS Computer Science Graduate. I am currently working in InApps
+        Solutions as a junior Full Stack Developer
+      </h5>
+      <div
+        className="flex-grow p-4 mt-5 bg-gray-400"
+        style={{ marginRight: "-1.5rem", marginLeft: "-1.5rem" }}
+      >
+        <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
+        <div className="grid gap-6 lg:grid-cols-2">
+          {services.map((service, idx) => (
+            <div className="bg-gray-200 rounded-lg lg:col-span-1">
+              <ServiceCard key={idx} service={service} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default index;
