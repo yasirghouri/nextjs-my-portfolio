@@ -7,6 +7,7 @@ import {
 import { GoLocation } from "react-icons/go";
 import { BsDownload } from "react-icons/bs";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -15,10 +16,13 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <img
-        src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.6435-9/176982088_1770658113095801_4663210915542176475_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFxYwI6kXoNBkdHgT5Ek8pVSxD7Xc-dJ7RLEPtdz50ntKq5siN_XEMUKgQaMDvkQNyQ44pOVu4noMv7dxR3DH-9&_nc_ohc=zLU6Ifz9clMAX-JI9q9&_nc_ht=scontent.fkhi16-1.fna&oh=2d2a643ce76c001b34dc56bd3c0f75cb&oe=60AB1C1C"
+      <Image
+        src="/images/myimage.jpg"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        height="128px"
+        width="128px"
+        layout="intrinsic"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Yasir</span> Ahmed Ghouri
