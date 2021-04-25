@@ -1,8 +1,9 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { IService } from "./type";
+import { IService, ISkill } from "./type";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
+import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
   {
@@ -39,5 +40,61 @@ export const services: IService[] = [
     title: "Whatever",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+  },
+];
+
+export const languages: ISkill[] = [
+  {
+    Icon: BsCircleFill,
+    name: "NestJS",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "JavaScript",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "ASP .NET MVC",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "ReactJS",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "NextJS",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "TypeScript",
+    level: "80",
+  },
+];
+
+export const tools: ISkill[] = [
+  {
+    Icon: BsCircleFill,
+    name: "Figma",
+    level: "85",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Photoshop",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "SmartGit",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Framer",
+    level: "45",
   },
 ];
