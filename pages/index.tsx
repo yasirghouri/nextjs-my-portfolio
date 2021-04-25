@@ -1,10 +1,11 @@
-import { GetServerSidePropsContext } from "next";
+import { NextPage } from "next";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
+import Head from "next/head";
 
-const index = () => {
+const About: NextPage = () => {
   return (
     <motion.div
       className="flex flex-col flex-grow px-6 pt-1"
@@ -13,6 +14,9 @@ const index = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>About Page</title>
+      </Head>
       <h5 className="my-3 font-medium">
         I am a BS Computer Science Graduate. I am currently working in InApps
         Solutions as a junior Full Stack Developer
@@ -43,7 +47,7 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;
 
 // export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 //   const res = await fetch("http://localhost:3000/api/services");

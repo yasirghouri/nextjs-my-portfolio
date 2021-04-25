@@ -39,13 +39,19 @@ const Sidebar = () => {
         <span>Download Resume</span>
       </a>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full">
-        <a href="https://www.facebook.com/cristiano.yasir.7/">
+        <a
+          href="https://www.facebook.com/cristiano.yasir.7/"
+          aria-label="Facebook"
+        >
           <AiFillFacebook className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/yasir-ghouri-83019a135/">
+        <a
+          href="https://www.linkedin.com/in/yasir-ghouri-83019a135/"
+          aria-label="LinkedIn"
+        >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://github.com/yasirghouri">
+        <a href="https://github.com/yasirghouri" aria-label="GitHub">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
       </div>

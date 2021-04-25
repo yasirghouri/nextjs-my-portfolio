@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { NextPage } from "next";
+import Head from "next/head";
 import { useState } from "react";
 import { fadeInUp, routeAnimation, stagger } from "../../animations";
 import ProjectCard from "../../components/ProjectCard";
@@ -6,7 +8,7 @@ import ProjectsNavbar from "../../components/ProjectsNavbar";
 import { projects as projectsData } from "../../data";
 import { Category } from "../../type";
 
-const Projects = () => {
+const Projects: NextPage = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
   const [showDetail, setShowDetail] = useState<number | null>(null);
@@ -34,6 +36,9 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Projects Page</title>
+      </Head>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}
