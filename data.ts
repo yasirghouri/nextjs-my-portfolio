@@ -85,7 +85,7 @@ export const tools: ISkill[] = [
   {
     Icon: BsCircleFill,
     name: "Photoshop",
-    level: "45",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
