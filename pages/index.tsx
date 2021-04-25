@@ -15,11 +15,12 @@ const About: NextPage = () => {
       exit="exit"
     >
       <Head>
-        <title>About Page</title>
+        <title>My Portfolio</title>
       </Head>
       <h5 className="my-3 font-medium">
         I am a BS Computer Science Graduate. I am currently working in InApps
-        Solutions as a junior Full Stack Developer
+        Solutions as a junior Full Stack Developer. I've been working since 6
+        months.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
