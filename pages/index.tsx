@@ -1,10 +1,18 @@
 import { GetServerSidePropsContext } from "next";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
+import { motion } from "framer-motion";
+import { fadeInUp, routeAnimation, stagger } from "../animations";
 
 const index = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h5 className="my-3 font-medium">
         I am a BS Computer Science Graduate. I am currently working in InApps
         Solutions as a junior Full Stack Developer
@@ -14,15 +22,24 @@ const index = () => {
         style={{ marginRight: "-1.5rem", marginLeft: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <motion.div
+          className="grid gap-6 lg:grid-cols-2"
+          variants={stagger}
+          animate="animate"
+          initial="initial"
+        >
           {services.map((service, idx) => (
-            <div className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 ">
+            <motion.div
+              className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
+              variants={fadeInUp}
+              key={idx}
+            >
               <ServiceCard key={idx} service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

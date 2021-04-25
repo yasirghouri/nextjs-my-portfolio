@@ -1,11 +1,19 @@
 import { languages, tools } from "../../data";
 import Bar from "../Bar/Bar";
+import { motion } from "framer-motion";
+import { fadeInUp, routeAnimation } from "../../animations";
 
 const Resume = () => {
   return (
-    <div className="px-6 py-4">
+    <motion.div
+      className="px-6 py-4"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <div className="grid gap-6 md:grid-cols-2">
-        <div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">BS Computer Science</h5>
@@ -15,8 +23,8 @@ const Resume = () => {
               Jinnah University
             </p>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Internship</h5>
@@ -24,7 +32,7 @@ const Resume = () => {
             <h5 className="my-2 text-xl font-bold">Full Stack Developer Jr.</h5>
             <p className="font-semibold">InApps Solutions</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
@@ -44,7 +52,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
